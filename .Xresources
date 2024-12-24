@@ -1,0 +1,29 @@
+dmenu.font: Noto Color Emoji:size=17:antialias=true:autohint=true
+dmenu.foreground: #f8f8f2
+dmenu.background: #282a36
+dmenu.selbackground: #6272a4
+dmenu.selforeground: #f8f8f2
+
+! Dracula Xresources palette
+! st.font:  xft:Hack Nerd Font:style=Regular:size=16:antialias=true,xft:Noto Color Emoji:size=16:antialias=true,xft:FiraCode Nerd Font Mono:style=Regular:size=16:antialias=true,xft:Noto Color Emoji:style=Regular:size=16:antialias=true
+! st.font:  FiraCode Nerd Font Mono:style=Regular:size=16:antialias=true
+st.font: Hack Nerd Font:style=Regular:size=16:antialias=true
+st.foreground: #f8f8f2
+st.background: #282A36
+st.color0:     #000000
+st.color8:     #4D4D4D
+st.color1:     #FF5555
+st.color9:     #FF6E67
+st.color2:     #50FA7B
+st.color10:    #5AF78E
+st.color3:     #F1FA8C
+st.color11:    #F4F99D
+st.color4:     #BD93F9
+st.color12:    #CAA9FA
+st.color5:     #FF79C6
+st.color13:    #FF92D0
+st.color6:     #8BE9FD
+st.color14:    #9AEDFE
+st.color7:     #BFBFBF
+st.color15:    #E6E6E6
+
