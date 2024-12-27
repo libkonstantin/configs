@@ -1,0 +1,35 @@
+#!/bin/sh
+
+display() {
+	args=""
+	case $1 in
+		-n) args="-n"; shift ;;
+	esac
+
+	if [ -n "${2+x}" ]; then
+		color=$2
+	else
+		case "$(basename $0)" in
+			sb-mail) color=13 ;;
+			sb-music) color=14 ;;
+			sb-disk) color=10 ;;
+			sb-memory) color=15 ;;
+			sb-loadavg) color=11 ;;
+			sb-mic) color=9 ;;
+			sb-record) color=9 ;;
+			sb-volume) color=15 ;;
+			sb-battery) color=14 ;;
+			sb-date) color=12 ;;
+			sb-network) color=9 ;;
+			sb-layout) color=15 ;;
+			*) color=15 ;;
+		esac
+	fi
+
+    body="$(echo $1 | colrm 45)"
+    if [ "$XDG_CURRENT_DESKTOP" = "sway" ]; then
+        echo $args "<span foreground='$(palette.sh $color)'>$body</span>"
+    else
+        echo $args "^C$color^$body"
+    fi
+}

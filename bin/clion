@@ -1,0 +1,11 @@
+#!/bin/bash
+set -u
+
+CLION_HOME=$HOME/.local/etc/clion/current
+CLION=$CLION_HOME/bin/clion.sh
+if [ -f $CLION ]; then
+  $CLION
+else
+  echo "clion not found at $CLION_HOME"
+  exit 1
+fi

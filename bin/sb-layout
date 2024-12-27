@@ -1,0 +1,4 @@
+#!/bin/sh
+
+. sb-theme
+display "⌨ $(xkb-switch -p)"

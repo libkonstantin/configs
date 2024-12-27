@@ -1,0 +1,11 @@
+#!/bin/bash
+set -u
+
+PYCHARM_HOME=$HOME/.local/etc/pycharm/current
+PYCHARM=$PYCHARM_HOME/bin/pycharm.sh
+if [ -f $PYCHARM ]; then
+  $PYCHARM
+else
+  echo "pycharm not found at $PYCHARM_HOME"
+  exit 1
+fi

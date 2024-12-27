@@ -1,0 +1,11 @@
+#!/bin/bash
+set -u
+
+BASHMOUNT_HOME=$HOME/.local/src/bashmount
+BASHMOUNT=$BASHMOUNT_HOME/bashmount
+if [ -f $BASHMOUNT ]; then
+  $BASHMOUNT
+else
+  echo "bashmount not found at $BASHMOUNT_HOME"
+  exit 1
+fi
