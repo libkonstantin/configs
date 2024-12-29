@@ -1,0 +1,11 @@
+#!/bin/bash
+set -u
+
+GO_HOME=$HOME/.local/etc/go/current
+GO=$GO_HOME/bin/go
+if [ -f $GO ]; then
+  $GO $@
+else
+  echo "go not found at $GO_HOME"
+  exit 1
+fi
